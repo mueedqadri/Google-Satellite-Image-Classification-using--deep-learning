@@ -1,42 +1,85 @@
 # Google-Satellite-Image-Classification-using--deep-learning
-This project involves developing an advanced system to optimize electricity procurement from multiple sources while minimizing the daily electricity bill. The project addresses the complexities of predicting electricity demand and source output and formulating an optimization problem with various constraints.
 
-#### Key Features and Achievements:
+This project focuses on aerial scene classification using a deep learning model trained on an image dataset. The goal is to identify and categorize different types of landscapes, regions, or objects visible from an aerial perspective. Such a model has applications in land-use planning, environmental monitoring, and urban development analysis.
 
-1.  **Optimization Algorithm**:
-    
-    -   Developed an algorithm to optimize electricity procurement from different sources, considering constraints on the maximum electricity usage from each source.
-    -   The objective was to minimize the daily electricity bill by determining the optimal bid quantities and prices for each hour.
-2.  **Neural Network Model**:
-    
-    -   Implemented a neural network model using TensorFlow and Keras to predict daily electricity demand and the output of various sources.
-    -   Extracted and engineered features from historical data to train the model, achieving high accuracy in predictions.
-3.  **Feature Engineering and Machine Learning**:
-    
-    -   Processed historical data to extract relevant features for the prediction model.
-    -   Utilized machine learning techniques, including clustering and regression, to solve the optimization problem with bid quantities and prices as decision variables.
-4.  **Technology Stack**:
-    
-    -   Employed Python libraries such as Pandas for data manipulation, scikit-learn for machine learning, and OR-Tools for solving linear programming problems.
-    -   Integrated TensorFlow and Keras for building and training the neural network model.
+## Project Overview
 
-#### Technical Details:
+-   **Data**: The dataset consists of 8267 images for training and 1800 images for validation, categorized into 30 different classes representing various aerial scenes.
+-   **Model**: A convolutional neural network (CNN) is trained to learn and classify the features of different aerial scenes accurately.
+-   **Metrics**: The model's performance is evaluated using accuracy, precision, recall, and F1 score.
 
--   **Data Preprocessing**:
-    
-    -   Collected and cleaned data on electricity demand, solar output, and market prices.
-    -   Normalized and transformed data for input into the neural network model.
--   **Model Training**:
-    
-    -   Trained a VGG19-based neural network model with customized layers for enhanced feature extraction and prediction accuracy.
-    -   Used ImageDataGenerator for data augmentation and flow_from_directory for efficient data loading.
--   **Optimization Solution**:
-    
-    -   Formulated a linear programming problem to minimize costs while meeting demand constraints and managing battery storage.
-    -   Solved the optimization problem using OR-Tools, ensuring efficient and optimal resource allocation.
--   **Evaluation**:
-    
-    -   Evaluated the model's performance using metrics such as accuracy, precision, recall, and F1 score.
-    -   Achieved significant improvements in prediction accuracy and cost savings.
+## Key Results
 
-This project demonstrates a comprehensive approach to managing electricity demand and procurement, leveraging advanced machine learning techniques and optimization algorithms to deliver tangible benefits in cost reduction and resource efficiency.
+-   **Accuracy**: 84.34%
+-   **Precision**: 83.98%
+-   **Recall**: 84.12%
+-   **F1 Score**: 84.16%
+
+## Notebook Contents
+
+1.  **Data Loading and Preprocessing**:
+    
+    -   Loading the aerial image dataset from the specified directory.
+    -   Preprocessing the images for training and validation.
+2.  **Model Training**:
+    
+    -   Building the CNN model using TensorFlow and Keras.
+    -   Training the model over 10 epochs.
+    -   Tracking the loss and accuracy during training.
+3.  **Model Evaluation**:
+    
+    -   Making predictions on the validation set.
+    -   Calculating accuracy, precision, recall, and F1 score for the model.
+4.  **Results and Conclusions**:
+    
+    -   Displaying the final evaluation metrics.
+    -   Discussing the model’s performance and potential improvements.
+
+## Use Cases
+
+-   **Land-Use Planning**: Classifying different types of land use from aerial images for better planning and management.
+-   **Environmental Monitoring**: Identifying changes in landscapes to monitor environmental conditions and changes over time.
+-   **Urban Development Analysis**: Analyzing urban areas and infrastructure development from aerial imagery.
+
+## How to Use
+
+1.  Clone the repository:
+    
+    bash
+    
+    Copy code
+    
+    `git clone https://github.com/yourusername/your-repo-name.git` 
+    
+2.  Install the required dependencies:
+    
+    bash
+    
+    Copy code
+    
+    `pip install -r requirements.txt` 
+    
+3.  Run the Jupyter notebook:
+    
+    bash
+    
+    Copy code
+    
+    `jupyter notebook Project2.ipynb` 
+    
+
+## Requirements
+
+-   Python 3.x
+-   TensorFlow
+-   Keras
+-   scikit-learn
+-   Jupyter Notebook
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
